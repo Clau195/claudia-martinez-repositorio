@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Claudia Martínez's personal portfolio.">
+  <title>Claudia Martínez | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to homepage">CM<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+    <a class="contact-link" href="#contact">Contact <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PERSONAL PORTFOLIO</p>
+        <p class="hero-kicker">A little look into what I do and learn</p>
+        <h1>Claudia <span>Martínez</span></h1>
+        <p class="hero-description">
+          A collection of projects, experiences, and things I have learned along the way.
+          This is where I share what inspires me and what I am working towards.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="text-link" href="#about">Get to know me</a>
+        </div>
+      </div>
+      <div class="hero-side bouquet-hero" aria-label="Interactive flower bouquet navigation">
+        <div class="hero-bouquet">
+          <svg class="bouquet-art" viewBox="0 0 520 520" role="img" aria-label="A hand-tied bouquet of soft pink, cream and sage flowers">
+            <defs>
+              <linearGradient id="wrap" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#eadfd1"/><stop offset="1" stop-color="#d8c8b8"/></linearGradient>
+              <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d5a5ad"/><stop offset="1" stop-color="#a96f7c"/></linearGradient>
+              <radialGradient id="pinkPetal"><stop offset="0" stop-color="#f2d8d7"/><stop offset="1" stop-color="#c98f9b"/></radialGradient>
+              <radialGradient id="creamPetal"><stop offset="0" stop-color="#fff4dc"/><stop offset="1" stop-color="#d9bd91"/></radialGradient>
+              <radialGradient id="sagePetal"><stop offset="0" stop-color="#e8eddf"/><stop offset="1" stop-color="#a5b398"/></radialGradient>
+            </defs>
+            <!-- stems gathered inside the wrapping -->
+            <g fill="none" stroke-linecap="round">
+              <path d="M112 151 C145 245 211 326 255 431" stroke="#667d5f" stroke-width="5"/>
+              <path d="M193 92 C202 220 231 333 257 431" stroke="#788d6d" stroke-width="5"/>
+              <path d="M270 67 C269 210 267 330 260 432" stroke="#607858" stroke-width="5"/>
+              <path d="M356 105 C328 228 294 337 264 431" stroke="#718766" stroke-width="5"/>
+              <path d="M422 164 C370 260 313 354 267 432" stroke="#607858" stroke-width="5"/>
+            </g>
+            <!-- paper cone -->
+            <path d="M105 247 Q259 307 414 240 L304 475 Q268 493 232 475Z" fill="url(#wrap)" stroke="#c9b9a8" stroke-width="2"/>
+            <path d="M105 247 Q175 308 259 322 Q344 309 414 240" fill="none" stroke="#fffaf2" stroke-width="5" opacity=".9"/>
+            <path d="M151 279 Q254 346 365 278" fill="none" stroke="#d1c0af" stroke-width="1.5" opacity=".7"/>
+            <!-- foliage sits above the wrapping so the bouquet feels fuller -->
+            <g class="bouquet-leaves">
+              <path d="M165 270 C113 214 78 218 91 265 C105 294 139 291 165 270Z"/><path d="M96 238 Q130 257 157 273"/>
+              <path d="M205 291 C154 238 125 250 146 292 C162 316 190 309 205 291Z"/><path d="M151 264 Q176 282 198 295"/>
+              <path d="M239 277 C214 218 237 194 265 228 C278 250 262 270 239 277Z"/><path d="M245 211 Q248 242 246 268"/>
+              <path d="M300 285 C315 222 350 213 356 257 C356 284 330 297 300 285Z"/><path d="M346 230 Q328 261 307 281"/>
+              <path d="M348 270 C390 215 425 226 409 269 C397 294 367 291 348 270Z"/><path d="M407 240 Q382 259 356 275"/>
+              <path d="M180 313 C126 286 103 311 139 341 C158 353 177 335 180 313Z"/><path d="M122 314 Q150 326 173 325"/>
+              <path d="M333 314 C382 279 407 302 376 337 C356 351 338 333 333 314Z"/><path d="M391 305 Q365 327 340 323"/>
+            </g>
+            <!-- flower heads: layered, varied blooms -->
+            <g class="flower-daisy" transform="translate(112 146)">
+              <g fill="#f6e8d2" stroke="#d6bda0" stroke-width="1.2"><ellipse cy="-29" rx="10" ry="23"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(30)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(60)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(90)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(120)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(150)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(180)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(210)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(240)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(270)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(300)"/><ellipse cy="-29" rx="10" ry="23" transform="rotate(330)"/></g><circle r="13" fill="#c69d5d"/><circle r="8" fill="#e4c47c"/><circle r="3" fill="#f4e0a7"/>
+            </g>
+            <g class="flower-rose" transform="translate(193 91)">
+              <circle r="38" fill="#c98f9b"/><path d="M-27 -4 C-32 -28 -6 -43 13 -31 C31 -21 30 4 12 14 C-4 23 -24 13 -18 -3 C-14 -15 4 -18 11 -7 C16 1 6 9 0 4 C-4 0 1 -5 5 -3" fill="none" stroke="#f2d7d8" stroke-width="10" stroke-linecap="round"/><path d="M-27 -4 C-15 16 10 25 28 7" fill="none" stroke="#a96f7c" stroke-width="2" opacity=".55"/><path d="M-14 -19 C-5 -30 12 -25 16 -12 C20 0 7 10 -3 5 C-12 1 -8 -9 0 -10" fill="none" stroke="#f7e5e1" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <g class="flower-peony" transform="translate(270 67)">
+              <g fill="url(#pinkPetal)" stroke="#b97d89" stroke-width="1"><ellipse cy="-19" rx="17" ry="27"/><ellipse cy="-19" rx="17" ry="27" transform="rotate(45)"/><ellipse cy="-19" rx="17" ry="27" transform="rotate(90)"/><ellipse cy="-19" rx="17" ry="27" transform="rotate(135)"/><ellipse cy="-12" rx="15" ry="23" transform="rotate(22)"/><ellipse cy="-12" rx="15" ry="23" transform="rotate(67)"/><ellipse cy="-12" rx="15" ry="23" transform="rotate(112)"/><ellipse cy="-12" rx="15" ry="23" transform="rotate(157)"/></g><g fill="none" stroke="#f8e8e3" stroke-width="1.4" opacity=".8"><path d="M-7 -24 Q-1 -13 0 -4"/><path d="M17 -15 Q8 -8 3 0"/><path d="M-18 8 Q-8 5 -2 1"/></g><circle r="10" fill="#c69b60"/>
+            </g>
+            <g class="flower-cosmos" transform="translate(356 105)">
+              <g fill="url(#sagePetal)" stroke="#91a084" stroke-width="1.2"><ellipse cy="-25" rx="11" ry="25"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(45)"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(90)"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(135)"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(180)"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(225)"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(270)"/><ellipse cy="-25" rx="11" ry="25" transform="rotate(315)"/></g><circle r="11" fill="#c9a56b"/>
+            </g>
+            <g class="flower-buttercup" transform="translate(422 164)">
+              <g fill="url(#creamPetal)" stroke="#c9a978" stroke-width="1"><ellipse cy="-17" rx="13" ry="21"/><ellipse cy="-17" rx="13" ry="21" transform="rotate(60)"/><ellipse cy="-17" rx="13" ry="21" transform="rotate(120)"/><ellipse cy="-17" rx="13" ry="21" transform="rotate(180)"/><ellipse cy="-17" rx="13" ry="21" transform="rotate(240)"/><ellipse cy="-17" rx="13" ry="21" transform="rotate(300)"/></g><circle r="10" fill="#b58d50"/><circle r="5" fill="#e8cd8b"/>
+            </g>
+            <!-- tied ribbon -->
+            <path d="M248 405 C219 383 193 396 201 420 C210 439 237 429 259 416 C239 445 245 465 263 464 C283 460 279 438 268 416 C293 440 320 438 326 418 C328 396 300 388 270 405Z" fill="url(#ribbon)" stroke="#99616d" stroke-width="2"/>
+            <path d="M260 410 Q270 420 279 408" fill="none" stroke="#f0cbd0" stroke-width="2"/>
+            <path d="M245 415 Q221 445 213 469 L244 455Z" fill="#c28b96" stroke="#99616d" stroke-width="1.5"/>
+            <path d="M282 415 Q305 446 318 465 L285 455Z" fill="#b77d89" stroke="#99616d" stroke-width="1.5"/>
+          </svg>
+          <a class="bouquet-hotspot hotspot-about" href="#about" aria-label="Go to About Me" data-label="About Me"></a>
+          <a class="bouquet-hotspot hotspot-projects" href="#projects" aria-label="Go to Projects" data-label="Projects"></a>
+          <a class="bouquet-hotspot hotspot-skills" href="#skills" aria-label="Go to Skills" data-label="Skills"></a>
+          <a class="bouquet-hotspot hotspot-certs" href="#certifications" aria-label="Go to Certifications" data-label="Certifications"></a>
+          <a class="bouquet-hotspot hotspot-contact" href="#contact" aria-label="Go to Contact" data-label="Contact"></a>
+        </div>
+        <p class="bouquet-hint">Choose a flower to explore</p>
+      </div>
+      <a class="scroll-note" href="#flower-menu"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 — ABOUT ME</p>
+        <h2>A little about my story<span>.</span></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-photo">
+          <div class="photo-placeholder">
+            <span class="photo-mark">CM</span>
+            <span class="photo-note">A photo can go here</span>
+          </div>
+          <span class="photo-flower" aria-hidden="true">✿</span>
+        </div>
+        <div class="about-text">
+          <p>
+            Hi! I'm Claudia Martínez, a student who enjoys learning, creating, and exploring new ideas.
+          </p>
+          <p>
+            Through my experience at Fundación ¡Supérate!, I have developed skills in technology,
+            English, and teamwork. I enjoy working on creative projects, solving problems, and
+            learning how technology can turn ideas into reality.
+          </p>
+          <p>
+            I'm responsible, curious, and always willing to challenge myself. I believe every
+            experience is an opportunity to grow and discover something new.
+          </p>
+          <div class="about-note">
+            <span class="note-flower">✿</span>
+            <p>There is always something new<br>to learn and create.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-wrap" id="projects">
+      <div class="section-heading heading-row">
+        <div>
+          <p class="eyebrow">02 — WHAT I HAVE CREATED</p>
+          <h2>Selected projects<span>.</span></h2>
+        </div>
+        <p class="section-intro">Ideas, assignments, and experiences<br>that have helped me grow.</p>
+      </div>
+      <div class="empty-grid">
+        <article class="project-card">
+          <span class="card-number">01</span>
+          <div class="card-symbol">✿</div>
+          <h3>Bloom &amp; Co. — Interactive Flower Shop</h3>
+          <p>A collaborative website developed with Yusseli using HTML, CSS, and JavaScript. It features a flower catalog, product filters, an interactive shopping bag, and a custom bouquet form.</p>
+          <p class="project-contribution"><strong>My contribution:</strong> Focused mainly on the visual design and collaborated on the website's code.</p>
+          <span class="card-tag">Collaborative project</span>
+          <a class="project-link" href="https://github.com/Yusseli27/bloom-and-co" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="card-number">02</span>
+          <div class="card-symbol">✳</div>
+          <h3>EduMatch — University Guidance Platform</h3>
+          <p>An educational project designed to help students explore university options. Our team developed an original application; another team created the website presented here.</p>
+          <p class="project-contribution"><strong>My contribution:</strong> Worked with two teammates on the original application's design, programming, and development.</p>
+          <span class="card-tag">Collaborative project</span>
+          <a class="project-link" href="https://profound-scone-1b07c2.netlify.app" target="_blank" rel="noopener noreferrer">View project website ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="card-number">03</span>
+          <div class="card-symbol">✧</div>
+          <h3>gestAI — AI Gesture Recognition</h3>
+          <p>An educational project developed with Katya and Yusseli. It uses image recognition to identify hand gestures and interpret them as classroom participation messages. The model was trained with Google's Teachable Machine.</p>
+          <span class="card-tag">Collaborative project · Teachable Machine</span>
+          <a class="project-link" href="https://gestai.netlify.app" target="_blank" rel="noopener noreferrer">Visit website ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-wrap" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">03 — WHAT I BRING</p>
+        <h2>Skills<span>.</span></h2>
+      </div>
+      <p class="section-intro">A mix of skills I have developed and continue to strengthen.</p>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Programming &amp; Web</h3>
+          <div class="skill-list">
+            <div><span>HTML</span><small>Basic</small></div>
+            <div><span>CSS</span><small>Basic</small></div>
+            <div><span>JavaScript</span><small>Basic</small></div>
+            <div><span>Python</span><small>Basic</small></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Microsoft &amp; Productivity Tools</h3>
+          <div class="skill-list">
+            <div><span>Microsoft Excel</span><small>Advanced</small></div>
+            <div><span>Microsoft Word</span><small>Intermediate</small></div>
+            <div><span>Microsoft PowerPoint</span><small>Intermediate</small></div>
+            <div><span>Microsoft Power BI</span><small>Intermediate</small></div>
+            <div><span>Microsoft Power Apps</span><small>Basic</small></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Design &amp; Development Tools</h3>
+          <div class="skill-list">
+            <div><span>Canva</span><small>Intermediate</small></div>
+            <div><span>GitHub</span><small>Intermediate</small></div>
+            <div><span>Visual Studio Code</span><small>Intermediate</small></div>
+          </div>
+        </div>
+        <div class="skill-group soft-skills">
+          <h3>Soft Skills</h3>
+          <div class="soft-skill-chips">
+            <span>Teamwork</span><span>Creativity</span><span>Communication</span>
+            <span>Leadership</span><span>Adaptability</span><span>Responsibility</span>
+            <span>Perseverance</span><span>Active listening</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications section-wrap" id="certifications">
+      <div class="section-heading">
+        <p class="eyebrow">04 — MILESTONES</p>
+        <h2>Certifications & recognition<span>.</span></h2>
+      </div>
+      <p class="section-intro">Professional certifications and learning experiences that have helped me build my skills.</p>
+      <div class="cert-grid">
+        <article class="cert-card">
+          <span class="cert-icon">✧</span>
+          <h3>Microsoft Office Specialist: Excel Associate</h3>
+          <p>Microsoft 365 Apps · November 4, 2025</p>
+          <a class="project-link" href="certificates/Excel%20Associate.pdf" target="_blank">View certificate ↗</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-icon">✧</span>
+          <h3>Microsoft Office Specialist: Excel Expert</h3>
+          <p>Microsoft 365 Apps · March 25, 2026</p>
+          <a class="project-link" href="certificates/Excel%20Expert.pdf" target="_blank">View certificate ↗</a>
+        </article>
+      </div>
+      <div class="training-block">
+        <h3>Courses &amp; Learning Experiences</h3>
+        <div class="training-item"><strong>Financial Education Course</strong><p>A course focused on learning about personal finance and financial topics.</p></div>
+        <div class="training-item"><strong>TELUS Conversation Club</strong><p>English conversation practice with volunteers, helping me build confidence and improve my spoken English.</p></div>
+        <p class="training-note">Course and club details can be updated with their exact certificate titles and dates.</p>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <p class="eyebrow">05 — GET IN TOUCH</p>
+      <h2>Thanks for stopping<br>by<span>.</span></h2>
+      <p>Contact information will be added here soon.</p>
+      <a class="button button-light" href="#home">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Made with HTML, CSS &amp; JavaScript <span class="footer-heart">♥</span></span>
+    <span>Claudia Martínez · 2026</span>
+  </footer>
+</body>
+</html>
